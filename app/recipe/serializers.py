@@ -19,4 +19,4 @@ class RecipeDetailSerializer(RecipeSerializer):
     """Serializer for recipe detail view."""
 
     class Meta(RecipeSerializer.Meta):
-        fileds = RecipeSerializer.Meta.fields + ['description']
+        fileds = RecipeSerializer.Meta.fields.append('description')
